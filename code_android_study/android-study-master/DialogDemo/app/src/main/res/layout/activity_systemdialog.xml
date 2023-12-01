@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:background="#f46d43"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textColor="#ffffff"
+        android:text="系统对话框AlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/ac_alertdialog_normal_btn"
+        android:text="普通Dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/ac_alertdialog_list_btn"
+        android:text="列表Dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/ac_alertdialog_single_btn"
+        android:text="单选Dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/ac_alertdialog_multi_btn"
+        android:text="多选Dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/ac_alertdialog_time_btn"
+        android:text="时间选择Dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/ac_alertdialog_date_btn"
+        android:text="日期选择Dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/ac_alertdialog_progress1_btn"
+        android:text="带转圈的ProgressDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/ac_alertdialog_progress2_btn"
+        android:text="带进度条的ProgressDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/ac_alertdialog_custom_btn"
+        android:text="自定义AlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:background="#f46d43"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textColor="#ffffff"
+        android:text="Android对话框概念和分类"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/ac_basis_dialog_btn"
+        android:text="Dialog示例"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/ac_basis_popupwindow_btn"
+        android:text="PopupWindow示例"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/ac_basis_dialogfragment_btn"
+        android:text="DialogFragment示例"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+    <Button
+        android:layout_marginBottom="80dp"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/ac_basis_test_btn"
+        android:text="其他按钮"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

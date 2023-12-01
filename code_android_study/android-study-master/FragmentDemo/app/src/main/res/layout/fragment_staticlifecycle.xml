@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    >
+    <TextView
+        android:layout_margin="12dp"
+        android:background="#f46d43"
+        android:padding="10dp"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:text="我是一个Fragment界面-静态加载frament，测试Fragment生命周期"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</FrameLayout>

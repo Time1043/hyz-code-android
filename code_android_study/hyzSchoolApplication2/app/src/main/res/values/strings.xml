@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">hyzSchoolApplication2</string>
+    <string name="btn_label_thread_start">开启线程</string>
+</resources>

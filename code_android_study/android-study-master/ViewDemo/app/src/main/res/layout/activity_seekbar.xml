@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <TextView
+
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textColor="#ff0000"
+        android:text="拖动条SeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="SeekBar基础属性"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <SeekBar
+        android:thumbTint="#ff0000"
+        android:max="100"
+        android:progress="20"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:text="自定义SeekBar样式"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <SeekBar
+        android:thumb="@drawable/seek_bar_thumb"
+        android:progressDrawable="@drawable/seek_bar_bg"
+        android:layout_margin="15dp"
+        android:maxHeight="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:text="SeekBar使用示例，模拟视频缓冲及播放"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <SeekBar
+        android:id="@+id/seekbar_video_seekbar"
+        android:max="120"
+        android:thumb="@drawable/video_seek_bar_thumb"
+        android:progressDrawable="@drawable/video_seek_bar_bg"
+        android:layout_margin="15dp"
+        android:maxHeight="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:text="竖向SeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <com.example.viewdemo.view.VerticalSeekbar
+        android:max="100"
+        android:thumb="@drawable/video_seek_bar_thumb"
+        android:progressDrawable="@drawable/video_seek_bar_bg"
+        android:layout_margin="15dp"
+        android:maxHeight="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

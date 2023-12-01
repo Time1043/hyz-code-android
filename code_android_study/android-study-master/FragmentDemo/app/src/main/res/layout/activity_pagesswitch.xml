@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f46d43"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="ViewPager2+Fragment多页面滑动"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+
+    <com.google.android.material.tabs.TabLayout
+       android:visibility="gone"
+        android:id="@+id/ac_pagesswitch_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable"
+        app:tabBackground="@color/tab_bg"
+        app:tabGravity="fill"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabUnboundedRipple="false"
+        app:tabMinWidth="5dp"
+        app:tabTextColor="#444444"
+        app:tabSelectedTextColor="#FF2F6E"
+        app:tabIndicatorColor="#FF2000"
+        app:tabIndicatorHeight="2dp"
+        app:tabIndicatorGravity="bottom"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorAnimationDuration="500"
+        app:tabTextAppearance="@style/TabLayoutTextStyle">
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/ac_pagesswitch_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

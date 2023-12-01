@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_testbasics_btn"
+                android:text="标准API部分View"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_testandroidx_btn"
+                android:text="Androidx部分View"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_broadcast_btn"
+                android:text="发送一个广播"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_permisionbroadcast_btn"
+                android:text="带权限发送一个广播"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

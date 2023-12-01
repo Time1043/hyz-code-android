@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:background="#f46d43"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:text="Service的使用示例"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/ac_intentservice_start"
+        android:text="启动IntentService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/ac_intentservice_stop"
+        android:text="停止IntentService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/ac_jobintentservice_start"
+        android:text="启动JobIntentService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/ac_jobintentservice_stop"
+        android:text="停止JobIntentService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/ac_foregroundservice_start"
+        android:text="启动前台服务"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/ac_foregroundservice_stop"
+        android:text="停止前台服务"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/ac_jobservice_start"
+        android:text="启动JobService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

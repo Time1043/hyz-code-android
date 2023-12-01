@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:background="#f46d43"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textColor="#ffffff"
+        android:text="FileProvider之Txt文件预览"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/ac_opentxt_contetn"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

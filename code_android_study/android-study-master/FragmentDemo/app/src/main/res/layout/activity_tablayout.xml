@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <TextView
+        android:background="#f46d43"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:text="TabLayout属性及使用"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/ac_tablayout_xml_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        >
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xml1"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xml2"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xml3"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xml4"/>
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ac_tablayout_dynamic_add"
+        >
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        app:tabMode="fixed"
+        app:tabBackground="@color/tab_bg"
+        app:tabGravity="fill"
+        app:tabRippleColor="@color/purple_700"
+        app:tabUnboundedRipple="true"
+
+        app:tabTextColor="#444444"
+        app:tabSelectedTextColor="#FF2F6E"
+
+        app:tabIndicatorColor="#FF2F6E"
+        app:tabIndicatorHeight="2dp"
+        app:tabIndicatorGravity="bottom"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorAnimationDuration="500"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+
+        >
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首页"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通讯录"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我"/>
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:tabMode="scrollable"
+        app:tabBackground="@color/tab_bg"
+        app:tabGravity="fill"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabUnboundedRipple="false"
+        app:tabMinWidth="5dp"
+
+
+        app:tabTextColor="#444444"
+        app:tabSelectedTextColor="#FF2F6E"
+
+        app:tabIndicatorColor="#FF2000"
+        app:tabIndicatorHeight="24dp"
+        app:tabIndicatorGravity="center"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorAnimationDuration="500"
+        app:tabIndicator="@drawable/indicator_bg"
+
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+
+
+        >
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首页"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通讯录"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首页首页"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通讯录通讯录"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息消息"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我我"/>
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/ac_tablayout_icon_tab"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:tabMode="fixed"
+        app:tabBackground="@color/tab_bg"
+        app:tabGravity="fill"
+        app:tabInlineLabel="false"
+        app:tabRippleColor="@color/purple_700"
+        app:tabUnboundedRipple="false"
+
+
+        app:tabTextColor="#444444"
+        app:tabSelectedTextColor="#FF2F6E"
+
+        app:tabIndicatorColor="#FF2F6E"
+        app:tabIndicatorHeight="0dp"
+        app:tabIndicatorGravity="bottom"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorAnimationDuration="500"
+
+        app:tabIconTint="@color/tab_color_selector"
+
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+
+        >
+        <com.google.android.material.tabs.TabItem
+            android:icon="@drawable/home_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首页"/>
+        <com.google.android.material.tabs.TabItem
+            android:icon="@drawable/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通讯录"/>
+        <com.google.android.material.tabs.TabItem
+            android:icon="@drawable/message_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息"/>
+        <com.google.android.material.tabs.TabItem
+            android:icon="@drawable/me_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/ac_tablayout_cuttom_tab"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        app:tabMode="fixed"
+        app:tabBackground="@color/tab_bg"
+        app:tabGravity="fill"
+        app:tabInlineLabel="false"
+        app:tabRippleColor="@color/purple_700"
+        app:tabUnboundedRipple="false"
+
+        app:tabTextColor="#444444"
+        app:tabSelectedTextColor="#FF2F6E"
+
+        app:tabIndicatorColor="#FF2F6E"
+        app:tabIndicatorHeight="0dp"
+        app:tabIndicatorGravity="bottom"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorAnimationDuration="500"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        >
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+</LinearLayout>

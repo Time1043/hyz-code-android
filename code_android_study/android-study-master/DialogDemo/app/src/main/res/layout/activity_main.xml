@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_basis_btn"
+                android:text="Android对话框概念和分类"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_systemdialog_btn"
+                android:text="系统AlertDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_commondialog_btn"
+                android:text="普通Dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_popupwindow_btn"
+                android:text="PopupWindow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_dialogfragment_btn"
+                android:text="DialogFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_floatingwindow_btn"
+                android:text="悬浮框FloatingWindow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path name="demof" path="." />
+    <cache-path name="democ" path="." />
+    <external-path name="demoe" path="." />
+    <external-files-path name="demoef" path="." />
+    <external-cache-path name="demoec" path="." />
+    <external-media-path name="demoem" path="."/>
+</paths>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <TextView
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textColor="#ff0000"
+        android:text="进度条ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:text="ProgressBar基础属性"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ProgressBar
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+        <ProgressBar
+            android:layout_marginLeft="15dp"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:progressTint="#ff0000"
+        android:progressBackgroundTint="#00ff00"
+        android:id="@+id/progress_horizontal"
+        android:layout_margin="15dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="30" />
+
+    <ProgressBar
+        android:layout_margin="15dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:indeterminateDuration="5000"
+        android:indeterminate="true" />
+
+    <TextView
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:text="自定义ProgressBar样式"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_marginLeft="15dp"
+            android:indeterminateDrawable="@drawable/progressbar_indeterminatedrawable"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+        <ProgressBar
+            android:layout_marginTop="15dp"
+            android:progressDrawable="@drawable/progressbar_bg"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="18" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:text="动画代替的ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/progress_image"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/amin_pgbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:text="自定义View实现ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.example.viewdemo.view.CirclePgBar
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <Button
+        android:textSize="20sp"
+        android:id="@+id/ac_attribute_testid_btn"
+        android:textAllCaps="false"
+        android:text="XML, id 属性测试"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:id="@android:id/empty"
+        android:text="XML, id 属性测试"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_marginTop="20dp"
+        android:background="#ff0000"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <!-- 顶部方向的内边距：android:paddingTop="15dp" -->
+    <!-- 底部方向的内边距：android:paddingBottom="15dp" -->
+    <!-- 左边方向的内边距：android:paddingLeft="15dp" -->
+    <!-- 右边方向的内边距：android:paddingRight="15dp" -->
+
+    <!-- 同时设置上下方向的内边距：android:paddingVertical="15dp" -->
+    <!-- 同时设置左右方向的内边距：android:paddingHorizontal="15dp" -->
+
+    <!-- 四个方向的内边距：android:padding="15dp" -->
+
+    <!-- start方向的内边距：android:paddingStart="15dp" -->
+    <!-- end方向的内边距：android:paddingEnd="15dp" -->
+
+    <FrameLayout
+        android:padding="15dp"
+        android:background="#cdcdcd"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <TextView
+            android:background="#fff000"
+            android:textColor="#333333"
+            android:textSize="24sp"
+            android:text="测试内边距padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <View
+        android:background="#ff0000"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+
+    <!-- 顶部方向的外边距：android:layout_marginTop="15dp" -->
+    <!-- 底部方向的外边距：android:layout_marginBottom="15dp" -->
+    <!-- 左边方向的外边距：android:layout_marginLeft="15dp" -->
+    <!-- 右边方向的外边距：android:layout_marginRight="15dp" -->
+
+    <!-- 同时设置上下方向的外边距：android:paddingVertical="15dp" -->
+    <!-- 同时设置左右方向的外边距：android:layout_marginHorizontal="15dp" -->
+
+    <!-- start方向的外边距：android:layout_marginStart="15dp" -->
+    <!-- end方向的外边距：android:layout_marginEnd="15dp" -->
+
+    <!-- 四个方向的外边距：android:layout_margin="15dp" -->
+
+    <FrameLayout
+        android:layout_margin="50dp"
+        android:background="#cdcdcd"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <TextView
+            android:layout_margin="50dp"
+            android:background="#fff000"
+            android:textColor="#333333"
+            android:textSize="24sp"
+            android:text="测试外边距margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <View
+        android:background="#ff0000"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+</LinearLayout>

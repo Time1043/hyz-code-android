@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff900"
+    android:layout_height="160dp"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_margin="12dp"
+        android:background="#f46d43"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:text="我是一个Host Fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_margin="12dp"
+        android:id="@+id/fm_fragmenthost_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</LinearLayout>

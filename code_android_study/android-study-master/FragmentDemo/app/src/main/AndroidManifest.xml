@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fragmentdemo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Fragmentdemo">
+        <activity android:name="com.example.fragmentdemo.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.fragmentdemo.activity.FragmentBasisActivity">
+        </activity>
+        <activity android:name="com.example.fragmentdemo.activity.FragmentStaticActivity">
+        </activity>
+
+        <activity android:name="com.example.fragmentdemo.activity.FragmentDynamicActivity">
+        </activity>
+
+        <activity android:name="com.example.fragmentdemo.activity.FragmentManagerActivity">
+        </activity>
+        <activity android:name="com.example.fragmentdemo.activity.FragmentLifecycleActivity">
+        </activity>
+
+        <activity android:name="com.example.fragmentdemo.activity.FragmentDataActivity">
+        </activity>
+        <activity android:name="com.example.fragmentdemo.activity.FragmentCommunicationActivity">
+        </activity>
+
+        <activity android:name="com.example.fragmentdemo.activity.TabLayoutActivity">
+        </activity>
+
+        <activity android:name="com.example.fragmentdemo.activity.NavigationActivity">
+        </activity>
+
+        <activity android:name="com.example.fragmentdemo.activity.ViewPager2Activity">
+        </activity>
+
+        <activity android:name="com.example.fragmentdemo.activity.PagesSwitchActivity">
+        </activity>
+
+        <activity android:name="com.example.fragmentdemo.activity.SlideNavigationActivity">
+        </activity>
+    </application>
+
+</manifest>

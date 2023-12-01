@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <TextView
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textColor="#ff0000"
+        android:text="Switch基础属性"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:text="Switch text相关属性"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Switch
+        android:text="Text开关"
+        android:checked="true"
+        android:switchMinWidth="100dp"
+        android:switchTextAppearance="@style/switchstyle"
+        android:showText="true"
+        android:textOn="on"
+        android:textOff="off"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:text="Switch 颜色相关属性"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Switch
+        android:checked="false"
+        android:thumbTint="@color/switch_color"
+        android:trackTint="@color/switch_color"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UseSwitchCompatOrMaterialXml"
+        />
+
+    <TextView
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:text="Switch 自定义滑块和轨道"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Switch
+        android:id="@+id/ac_switch_test"
+        android:checked="false"
+        android:thumb="@drawable/thumb"
+        android:track="@drawable/track"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UseSwitchCompatOrMaterialXml"
+        />
+
+</LinearLayout>

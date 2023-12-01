@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <TextView
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="28sp"
+        android:textColor="#ff0000"
+        android:text="ImageView的使用"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/ac_imageView_scaletype"
+        android:scaleType="fitCenter"
+        android:src="@drawable/android_small"
+        android:layout_margin="5dp"
+        android:background="#aaaaaa"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <ImageView
+        android:scaleType="matrix"
+        android:id="@+id/ac_imageView_matrix"
+        android:src="@drawable/android_small"
+        android:layout_margin="5dp"
+        android:background="#aaaaaa"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <ImageView
+        android:id="@+id/ac_imageView_sdcard"
+        android:scaleType="centerCrop"
+        android:layout_margin="5dp"
+        android:background="#aaaaaa"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <ImageView
+        android:id="@+id/ac_imageView_net"
+        android:scaleType="fitXY"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+
+</LinearLayout>

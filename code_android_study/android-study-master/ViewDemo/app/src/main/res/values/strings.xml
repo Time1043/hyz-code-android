@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ViewDemo</string>
+    <string name="linearlayout_demo">LinearLayout Demo</string>
+
+    <string name="textview_txt">txt test default</string>
+
+    <string name="spinner_title">选择城市</string>
+</resources>

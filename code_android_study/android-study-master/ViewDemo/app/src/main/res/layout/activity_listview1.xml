@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:background="#f46d43"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:text="列表视图ListView（上）"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--stackFromBottom true listview滚到最后，默认false -->
+    <!--transcriptMode alwaysScroll disabled  normal https://blog.csdn.net/natloc/article/details/50850099-->
+
+    <!--divider-->
+    <!--dividerHeight-->
+    <!--fadingEdge-->
+    <!--fadingEdgeLength-->
+
+    <!--scrollbar-->
+
+    <!--fadeScrollbars-->
+
+
+
+    <ListView
+        android:id="@+id/ac_listview1"
+
+        android:divider="#dddddd"
+        android:dividerHeight="1dp"
+
+        android:listSelector="@drawable/listview_item_selector"
+
+        android:scrollbars="vertical"
+
+
+        android:fastScrollEnabled="false"
+        android:fadeScrollbars="false"
+
+        android:requiresFadingEdge="none"
+        android:fadingEdgeLength="100dp"
+
+        android:stackFromBottom="false"
+        android:transcriptMode="normal"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

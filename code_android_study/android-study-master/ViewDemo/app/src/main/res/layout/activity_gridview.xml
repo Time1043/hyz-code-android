@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:background="#f46d43"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:text="网格视图GridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--
+
+     1、父类的属性
+         android:listSelector="@android:color/transparent"
+         android:fastScrollEnabled="false"
+         android:fadeScrollbars="false"
+         android:requiresFadingEdge="vertical"
+         android:fadingEdgeLength="100dp"
+         android:overScrollMode="ifContentScrolls"  never ifContentScrolls always
+
+         android:transcriptMode="disabled" disabled normal  alwaysScroll
+
+     2、
+     android:numColumns：设置列数
+     android:columnWidth：设置列的宽度
+     android:gravity：组件对其方式
+     android:horizontalSpacing：水平方向每个单元格的间距
+     android:verticalSpacing：垂直方向每个单元格的间距
+     android:stretchMode：分配空间
+
+     spacingWidth
+      除去griditem和gridview的左右padding，剩余的空间totalSpace用中间的空余空间去扩充，这里的中间的分割空间总数n = columns - 1，
+      这n个空间平分totalSpace
+     spacingWidthUniform
+      除去griditem和gridview的左右padding，剩余的空间totalSpace用n= columns + 1个空间去平分。与spacingWidth的区别就是分割空间多了两个，
+      就是Gridview左右两边分别有一个，而且还不包括padding。
+     columnWidth
+      除去gridview的左右padding和horizontalspacing，用列的宽度去填满剩余空间，就是把剩余的空间平均分给每列的宽度。
+     -->
+
+
+
+
+
+    <GridView
+
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:padding="@dimen/grid_padding"
+
+        android:listSelector="@android:color/transparent"
+        android:fastScrollEnabled="false"
+        android:fadeScrollbars="false"
+
+        android:requiresFadingEdge="vertical"
+        android:fadingEdgeLength="10dp"
+
+        android:overScrollMode="ifContentScrolls"
+
+        android:transcriptMode="disabled"
+
+
+        android:numColumns="2"
+        android:columnWidth="240dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/grid_padding"
+        android:verticalSpacing="@dimen/grid_padding"
+        />
+
+
+</LinearLayout>

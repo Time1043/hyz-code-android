@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.DialogDemo" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="PopUpAttr">@style/DefPopUpAttr</item>
+        <item name="android:popupBackground">@android:color/holo_orange_light</item>
+    </style>
+
+
+    <style name="Theme.AlertDialog.Custom" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@drawable/popup_bg_green</item>
+    </style>
+
+
+    <!-- dialog的动画 -->
+    <style name="Theme.AlertDialog.Custom.Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out_anim</item>
+    </style>
+
+
+    <style name="Theme.PhotoDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+
+    <style name="Theme.PhotoDialog.Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_bottom_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_bottom_out_anim</item>
+    </style>
+
+
+    <style name="DefPopUpAttr" parent="Widget.AppCompat.PopupWindow">
+        <item name="android:popupBackground">@android:color/holo_green_dark</item>
+    </style>
+
+    <style name="DefPopUpStyle" parent="Widget.AppCompat.PopupWindow">
+        <item name="android:popupBackground">@android:color/holo_blue_dark</item>
+    </style>
+
+    <style name="DefPopUpStyle2" parent="Widget.AppCompat.PopupWindow">
+        <item name="android:popupBackground">@android:color/holo_purple</item>
+    </style>
+
+
+</resources>

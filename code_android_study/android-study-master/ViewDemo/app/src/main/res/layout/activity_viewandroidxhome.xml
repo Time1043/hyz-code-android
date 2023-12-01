@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_viewandroidx_contraint_btn"
+                android:text="ContraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_viewandroidx_contraint2_btn"
+                android:text="ContraintLayout2.0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_viewandroidx_recyclerview1_btn"
+                android:text="RecyclerView（一）"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_viewandroidx_recyclerview2_btn"
+                android:text="RecyclerView（二）"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_viewandroidx_recyclerview3_btn"
+                android:text="RecyclerView（三）"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_viewandroidx_recyclerview4_btn"
+                android:text="RecyclerView（四）"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_viewandroidx_viewpager_btn"
+                android:text="ViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

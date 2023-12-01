@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+
+        android:id="@+id/pager_image"
+        android:background="@drawable/erweima"
+        android:layout_gravity="center"
+        android:layout_width="450dp"
+        android:layout_height="450dp"/>
+
+    <ImageView
+
+        android:background="@drawable/wiicha"
+        android:layout_gravity="center"
+        android:layout_width="94dp"
+        android:layout_height="94dp"/>
+
+
+</FrameLayout>

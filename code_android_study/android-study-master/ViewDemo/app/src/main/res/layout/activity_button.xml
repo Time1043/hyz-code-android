@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <TextView
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="28sp"
+        android:textColor="#ff0000"
+        android:text="Button基础属性"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textColor="#ffffff"
+        android:background="@drawable/button_bg_test"
+        android:letterSpacing="1"
+        android:textAllCaps="false"
+        android:text="按钮Ok"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <Button
+        android:background="@drawable/button_bg_selector"
+        android:letterSpacing="1"
+        android:textAllCaps="false"
+        android:text="图片背景按钮"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+
+    <Button
+        android:background="@drawable/button_xmlbg_selector"
+        android:letterSpacing="1"
+        android:textAllCaps="false"
+        android:text="Xml背景按钮"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <Button
+        android:id="@+id/ac_button_test"
+        android:background="@drawable/button_xmlbg_selector"
+        android:textAllCaps="false"
+        android:text="Button事件"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/ac_button_text"
+        android:background="@drawable/button_xmlbg_selector"
+        android:textAllCaps="false"
+        android:text="TextView事件"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+</LinearLayout>

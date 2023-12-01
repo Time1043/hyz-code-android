@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="text">10sp</dimen>
+    <dimen name="grid_padding">8dp</dimen>
+
+    <dimen name="grid_image_radius">6dp</dimen>
+
+    <dimen name="staggered_item_padding">4dp</dimen>
+</resources>

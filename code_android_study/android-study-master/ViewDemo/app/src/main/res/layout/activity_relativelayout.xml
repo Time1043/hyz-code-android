@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+    <TextView
+        android:id="@+id/ac_relativvelayout_parent_txt"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="#ff0000"
+        android:text="RelativeLayout的父布局对齐方式"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <!-- android:layout_alignParentTop=""-->
+    <!-- android:layout_alignParentBottom=""-->
+    <!-- android:layout_alignParentLeft=""-->
+    <!-- android:layout_alignParentRight=""-->
+
+    <!-- android:layout_centerInParent=""-->
+    <!-- android:layout_centerVertical=""-->
+    <!-- android:layout_centerHorizontal=""-->
+
+    <!-- android:layout_alignParentStart=""-->
+    <!-- android:layout_alignParentEnd=""-->
+
+
+    <RelativeLayout
+        android:id="@+id/ac_relativvelayout_testparent_layout"
+        android:layout_below="@id/ac_relativvelayout_parent_txt"
+        android:background="#cdcdcd"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:layout_marginLeft="100dp"
+            android:layout_alignParentTop="true"
+            android:textSize="20sp"
+            android:background="#fff000"
+            android:text="顶部"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:textSize="20sp"
+            android:background="#fff000"
+            android:text="底部"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:background="#fff000"
+            android:text="左边"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:textSize="20sp"
+            android:background="#fff000"
+            android:text="右边"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:background="#fff000"
+            android:text="居中"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:background="#fff000"
+            android:text="垂直居中"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:background="#fff000"
+            android:text="水平居中"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+            android:background="#fff000"
+            android:text="End"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_alignParentStart="true"
+            android:textSize="20sp"
+            android:background="#fff000"
+            android:text="Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_below="@id/ac_relativvelayout_testparent_layout"
+        android:id="@+id/ac_relativvelayout_child_txt1"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="#ff0000"
+        android:text="RelativeLayout子View对齐方式"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- android:layout_alignTop=""-->
+    <!-- android:layout_alignBottom=""-->
+    <!-- android:layout_alignLeft=""-->
+    <!-- android:layout_alignRight=""-->
+
+
+    <!-- android:layout_alignStart=""-->
+    <!-- android:layout_alignEnd=""-->
+
+    <RelativeLayout
+        android:id="@+id/ac_relativvelayout_testchild_layout1"
+        android:layout_below="@id/ac_relativvelayout_child_txt1"
+        android:background="#cdcdcd"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:id="@+id/ac_relativvelayout_text2"
+            android:textSize="20sp"
+            android:background="#fff000"
+            android:text="参考物"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="120dp"
+            android:layout_height="80dp"/>
+
+        <TextView
+            android:layout_alignTop="@id/ac_relativvelayout_text2"
+            android:textSize="20sp"
+            android:background="#fff000"
+            android:text="顶部"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_alignBottom="@id/ac_relativvelayout_text2"
+            android:textSize="20sp"
+            android:background="#fff000"
+            android:text="底部"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_alignLeft="@id/ac_relativvelayout_text2"
+            android:textSize="20sp"
+            android:background="#fff000"
+            android:text="左边"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_alignRight="@id/ac_relativvelayout_text2"
+            android:textSize="20sp"
+            android:background="#fff000"
+            android:text="右边"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_below="@id/ac_relativvelayout_testchild_layout1"
+        android:id="@+id/ac_relativvelayout_child_txt2"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="#ff0000"
+        android:text="RelativeLayout子View的相对位置"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- android:layout_above=""-->
+    <!-- android:layout_below=""-->
+    <!-- android:layout_toLeftOf=""-->
+    <!-- android:layout_toRightOf=""-->
+
+    <!-- android:layout_toStartOf=""-->
+    <!-- android:layout_toEndOf=""-->
+
+    <RelativeLayout
+        android:id="@+id/ac_relativvelayout_testchild_layout2"
+        android:layout_below="@id/ac_relativvelayout_child_txt2"
+        android:background="#cdcdcd"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:id="@+id/ac_relativvelayout_text1"
+            android:textSize="20sp"
+            android:background="#fff000"
+            android:text="参考物"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="150dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:layout_above="@id/ac_relativvelayout_text1"
+            android:textSize="20sp"
+            android:background="#fff000"
+            android:text="顶部"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_below="@id/ac_relativvelayout_text1"
+            android:textSize="20sp"
+            android:background="#fff000"
+            android:text="底部"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_toLeftOf="@id/ac_relativvelayout_text1"
+            android:textSize="20sp"
+            android:background="#fff000"
+            android:text="左边"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_toRightOf="@id/ac_relativvelayout_text1"
+            android:textSize="20sp"
+            android:background="#fff000"
+            android:text="右边"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

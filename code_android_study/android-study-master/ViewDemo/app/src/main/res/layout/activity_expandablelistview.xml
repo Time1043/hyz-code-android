@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:background="#f46d43"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:text="多级列表ExpandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--
+     android:childDivider：指定各组内子类表项之间的分隔条，图片不会完全显示， 分离子列表项的是一条直线
+     android:childIndicator：显示在子列表旁边的Drawable对象，可以是一个图像
+     android:childIndicatorEnd：子列表项指示符的结束约束位置
+     android:childIndicatorLeft：子列表项指示符的左边约束位置
+     android:childIndicatorRight：子列表项指示符的右边约束位置
+     android:childIndicatorStart：子列表项指示符的开始约束位置
+     android:groupIndicator：显示在组列表旁边的Drawable对象，可以是一个图像
+     android:indicatorEnd：组列表项指示器的结束约束位置
+     android:indicatorLeft：组列表项指示器的左边约束位置
+     android:indicatorRight：组列表项指示器的右边约束位置
+     android:indicatorStart：组列表项指示器的开始约束位置
+     -->
+
+    <ExpandableListView
+        android:id="@+id/ac_expandablelistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:childDivider="#999999"
+        android:childIndicator="@null"
+        android:childIndicatorLeft="20dp"
+        android:groupIndicator="@null"
+        />
+
+
+</LinearLayout>

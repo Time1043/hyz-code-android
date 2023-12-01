@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <TextView
+        android:id="@+id/ac_navigation_title"
+        android:background="#f46d43"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/ac_slidenavigation_pager"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/ac_navigation_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        app:tabMode="fixed"
+        app:tabBackground="@color/tab_bg"
+        app:tabGravity="fill"
+        app:tabInlineLabel="false"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabUnboundedRipple="false"
+
+        app:tabTextColor="#444444"
+        app:tabSelectedTextColor="#FF2F6E"
+
+        app:tabIndicatorColor="#FF2F6E"
+        app:tabIndicatorHeight="0dp"
+        app:tabIndicatorGravity="bottom"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorAnimationDuration="500"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        >
+
+    </com.google.android.material.tabs.TabLayout>
+
+</LinearLayout>

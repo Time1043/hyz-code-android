@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+    <TextView
+        android:id="@+id/scrollview_title"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textColor="#ff0000"
+        android:text="垂直滚动视图ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <com.example.viewdemo.view.MonitorScrollView
+        android:id="@+id/scrollview_scrollview"
+        android:layout_marginTop="60dp"
+        android:scrollbars="none"
+        android:scrollbarStyle="insideInset"
+        android:scrollbarThumbVertical="@drawable/scrollview_thumb_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_margin="10dp"
+                android:background="@drawable/android1"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"/>
+            <TextView
+                android:textColor="#444444"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="开始使用Android"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+            <TextView
+                android:textColor="#444444"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="1、设置运行时环境 - 参阅获取 Android 12，刷写 Google Pixel 设备或设置模拟器。
+\n\n2、设置 Android Studio - 试用 Android 12 SDK 和工具。有关具体步骤，请参阅设置指南.
+\n\n3、了解新变化 - 查看可能影响了您的应用的所有应用的行为变更以及以 Android 12 为目标平台的应用的行为变更。
+\n\n4、测试应用 - 通过执行所有流程来查找问题。您可以在运行时切换行为变更设置来逐一排查问题。
+\n\n5、更新应用 - 如有可能，以 Android 12 为目标平台，并使用 Beta 版或其他论坛让用户参与测试。"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="#444444"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="这个是第一项数据"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+
+
+
+            <ImageView
+                android:layout_margin="10dp"
+                android:background="@drawable/android2"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"/>
+
+            <TextView
+                android:textColor="#444444"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="这个是第二项数据"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:textColor="#444444"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="这个是第三项数据"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:textColor="#444444"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="这个是第四项数据"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:textColor="#444444"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="这个是第五项数据"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:textColor="#444444"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="这个是第六项数据"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/android_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="#444444"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="这个是第七项数据"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:textColor="#444444"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="这个是第八项数据"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+    </com.example.viewdemo.view.MonitorScrollView>
+
+
+
+
+</FrameLayout>

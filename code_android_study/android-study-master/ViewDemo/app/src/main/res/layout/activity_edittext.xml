@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <TextView
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#ff0000"
+        android:text="EditText基础属性"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:maxLines="3"
+        android:gravity="top"
+        android:id="@+id/edit_text"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:hint="输入提示"
+        android:textColorHint="#0000ff"
+        android:background="@drawable/edit_text_bg"
+        android:textColorHighlight="#00ff00"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"/>
+
+    <EditText
+        android:textSize="16sp"
+        android:paddingStart="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="phone"
+        android:hint="请输入手机号码"
+        android:textColorHint="#aaaaaa"
+        android:textColorHighlight="#00ff00"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <EditText
+        android:textSize="16sp"
+        android:paddingStart="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="textPassword"
+        android:hint="请输入密码"
+        android:textColorHint="#aaaaaa"
+        android:textColorHighlight="#00ff00"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <EditText
+        android:textSize="16sp"
+        android:paddingStart="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="number"
+        android:hint="请输入数字"
+        android:textColorHint="#aaaaaa"
+        android:textColorHighlight="#00ff00"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <Button
+        android:id="@+id/ac_edittext_set"
+        android:textAllCaps="false"
+        android:text="给EditText设置Text"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+</LinearLayout>

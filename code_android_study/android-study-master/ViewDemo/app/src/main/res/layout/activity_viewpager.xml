@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <TextView
+        android:background="#f46d43"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textColor="#ffffff"
+        android:text="滑动切换视图ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:visibility="visible"
+            app:tabTextColor="#565656"
+            app:tabSelectedTextColor="#f46d43"
+            android:id="@+id/ac_viewpager_tablayout"
+            app:tabIndicatorColor="#f46d43"
+            app:tabMode="fixed"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/ac_viewpager_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<!--            <androidx.viewpager.widget.PagerTabStrip-->
+<!--                android:id="@+id/ac_viewpager_pagertitlestrip"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_gravity="top"-->
+<!--                android:textColor="#f46d43" />-->
+    </androidx.viewpager.widget.ViewPager>
+
+
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:visibility="gone"-->
+<!--        app:tabTextColor="#565656"-->
+<!--        app:tabSelectedTextColor="#f46d43"-->
+<!--        android:id="@+id/ac_viewpager_tablayout"-->
+<!--        app:tabIndicatorColor="#f46d43"-->
+<!--        app:tabMode="fixed"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp">-->
+<!--    </com.google.android.material.tabs.TabLayout>-->
+
+
+<!--    <androidx.viewpager.widget.PagerTabStrip-->
+<!--        android:id="@+id/ac_viewpager_pagertitlestrip"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_gravity="top"-->
+<!--        android:textColor="#f46d43" />-->
+
+</LinearLayout>

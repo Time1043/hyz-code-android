@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PopupWindow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:popupBackground="@android:color/holo_red_dark"
+    style="@style/DefPopUpStyle2"
+    >
+</PopupWindow>

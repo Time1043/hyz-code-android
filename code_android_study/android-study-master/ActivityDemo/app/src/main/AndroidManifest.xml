@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.activitydemo">
+
+
+    <uses-permission
+        android:name="com.example.viewdemo.permision.broadcast"/>
+
+    <permission
+        android:name="com.example.activitydemo.permision.broadcast"
+        android:protectionLevel="normal"/>
+
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <uses-permission
+        android:name="com.example.demoprovider.provider.permission.READ_PROVIDER" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <queries>
+        <package android:name="com.example.aidltest" />
+        <package android:name="com.example.demoprovider" />
+    </queries>
+
+
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher_round"
+        android:supportsRtl="true"
+        android:exported="true"
+        android:theme="@style/Theme.ActivityDemo">
+        <activity
+            android:exported="true"
+            android:name="com.example.activitydemo.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:exported="true"
+            android:name="com.example.activitydemo.activity.LifeCycleActivity">
+        </activity>
+        <activity
+            android:exported="true"
+            android:name="com.example.activitydemo.activity.LifeCycleTestActivity">
+        </activity>
+        <activity
+            android:theme="@style/Theme.AppCompat.Dialog"
+            android:exported="true"
+            android:name="com.example.activitydemo.activity.LifeCycleDialogActivity">
+        </activity>
+
+        <activity
+            android:name="com.example.activitydemo.activity.StartModeActivity">
+        </activity>
+
+        <activity
+            android:name="com.example.activitydemo.activity.StartModeTestActivity1">
+        </activity>
+
+        <activity
+            android:name="com.example.activitydemo.activity.StartModeTestActivity2">
+            <intent-filter>
+                <action android:name="com.action.a" />
+                <action android:name="com.action.b" />
+                <action android:name="com.action.c" />
+                <category android:name="com.category.a"/>
+                <category android:name="com.category.b"/>
+                <category android:name="com.category.c"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="content"
+                    android:host="com.example"
+                    android:port="8080"
+                    android:path="/hello"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:launchMode="standard"
+            android:name="com.example.activitydemo.activity.ArgumentsActivity">
+        </activity>
+
+        <activity
+            android:name="com.example.activitydemo.activity.ServiceBasicActivity">
+        </activity>
+
+        <service
+            android:exported="false"
+            android:name="com.example.activitydemo.service.BasicService" />
+
+        <service
+            android:exported="false"
+            android:name="com.example.activitydemo.service.ExtendIntentService" />
+
+        <service
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"
+            android:name="com.example.activitydemo.service.ExtendJobIntentService" />
+
+        <service
+            android:exported="false"
+            android:name="com.example.activitydemo.service.ForegroundService" />
+
+        <service android:name="com.example.activitydemo.service.ExtendJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+        <activity
+            android:name="com.example.activitydemo.activity.ServiceExampleActivity">
+        </activity>
+
+        <activity
+            android:name="com.example.activitydemo.activity.ServiceAidlIpcActivity">
+        </activity>
+
+        <activity
+            android:name="com.example.activitydemo.activity.ServiceMessengerIpcActivity">
+        </activity>
+
+        <activity
+            android:name="com.example.activitydemo.activity.ContentProviderBasicActivity">
+        </activity>
+
+
+        <activity
+            android:name="com.example.activitydemo.activity.DemoroviderActivity">
+        </activity>
+
+
+        <activity
+            android:name="com.example.activitydemo.activity.IntentActivity">
+        </activity>
+
+
+        <activity
+            android:name="com.example.activitydemo.activity.TestIntentActivity">
+            <intent-filter >
+                <action android:name="action1"/>
+                <action android:name="action2"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="category1"/>
+                <category android:name="category2"/>
+                <data android:scheme="content"
+                    android:mimeType=""
+                    android:host="com.example"
+                    android:port="8080"
+                    android:path="/hello"
+                    />
+
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="Open Txt"
+            android:name="com.example.activitydemo.activity.OpenTxtActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="text/*"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.activitydemo.activity.BroadcastActivity">
+        </activity>
+
+        <receiver android:name="com.example.activitydemo.receiver.StaticBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.activitydemo.action.action1"/>
+                <action android:name="android.intent.action.AIRPLANE_MODE"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.example.activitydemo.activity.BroadcastPermissionActivity">
+        </activity>
+
+
+        <receiver android:name="com.example.activitydemo.receiver.PermisionStaticReceiver"
+            android:permission="com.example.activitydemo.permision.broadcast"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.activitydemo.action.permissionaction2"/>
+                <action android:name="android.intent.action.AIRPLANE_MODE"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

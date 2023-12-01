@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DialogDemo</string>
+
+    <string-array name="doalog_items">
+        <item>item 1</item>
+        <item>item 2</item>
+        <item>item 3</item>
+        <item>item 4</item>
+    </string-array>
+</resources>

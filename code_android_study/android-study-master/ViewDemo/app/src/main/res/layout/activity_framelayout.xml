@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:padding="15dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#ff0000"
+        android:text="测试 gravity与layout_gravity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:background="#ff0000"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <!--常用值-->
+    <!-- left 左边-->
+    <!-- right 右边-->
+    <!-- top 顶部-->
+    <!-- bottom 底部-->
+    <!-- start 开始-->
+    <!-- end 结束-->
+    <!-- center 居中-->
+    <!-- center_horizontal 水平居中-->
+    <!-- center_vertical 垂直居中-->
+
+    <!--使用较少-->
+    <!--fill-->
+    <!--fill_horizontal-->
+    <!--fill_vertical-->
+    <!--clip_horizontal-->
+    <!--clip_vertical-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#cdcdcd"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <TextView
+            android:paddingRight="12dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="#fff000"
+            android:textColor="#333333"
+            android:textSize="24sp"
+            android:text="测试gravity"
+            android:layout_width="200dp"
+            android:layout_height="80dp"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:visibility="visible"
+        android:padding="15dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#ff0000"
+        android:text="FrameLayout的使用"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <View
+        android:visibility="visible"
+        android:background="#ff0000"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+
+    <FrameLayout
+        android:visibility="visible"
+        android:background="#cdcdcd"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal|bottom"
+            android:background="#fff000"
+            android:textColor="#333333"
+            android:textSize="24sp"
+            android:text="黄色"
+            android:layout_width="180dp"
+            android:layout_height="180dp"/>
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal|bottom"
+            android:visibility="visible"
+            android:background="#00ff00"
+            android:textColor="#333333"
+            android:textSize="24sp"
+            android:text="绿色"
+            android:layout_width="140dp"
+            android:layout_height="140dp"/>
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal|bottom"
+            android:visibility="visible"
+            android:background="#0000ff"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:text="蓝色"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+    </FrameLayout>
+
+    <View
+        android:background="#ff0000"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+</LinearLayout>

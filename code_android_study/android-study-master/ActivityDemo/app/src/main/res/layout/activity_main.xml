@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_manifest_btn"
+                android:text="Activity配置清单"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_lifecycle_btn"
+                android:text="Activity生命周期"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_startmode_btn"
+                android:text="Activity启动方式"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_servicebasic_btn"
+                android:text="Service基础知识"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_serviceexample_btn"
+                android:text="Service的使用示例"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_service_messager_ipc_btn"
+                android:text="Service Messager跨进程通信"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_service_aidl_ipc_btn"
+                android:text="Service AIDL跨进程通信"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_contentproviderbasic_btn"
+                android:text="ContentProvider基础知识"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_contentprovidercustom_btn"
+                android:text="创建ContentProvider程序"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_broadcast_btn"
+                android:text="广播发送和接收"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_broadcastpermission_btn"
+                android:text="广播的权限"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_intent_btn"
+                android:text="Intent的基础知识"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

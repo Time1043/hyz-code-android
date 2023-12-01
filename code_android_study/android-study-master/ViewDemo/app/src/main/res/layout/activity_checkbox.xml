@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <TextView
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textColor="#ff0000"
+        android:text="CheckBox基础属性使用"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <CheckBox
+        android:id="@+id/ac_checkbox_onebt"
+        android:paddingStart="10dp"
+        android:text="单个checkbox"
+        android:buttonTint="#ff0000"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:text="1、默认效果，请选择?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/ac_checkbox_1a"
+        android:paddingStart="10dp"
+        android:text="A、这是选项A"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/ac_checkbox_1b"
+        android:paddingStart="10dp"
+        android:text="B、这是选项B"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/ac_checkbox_1c"
+        android:paddingStart="10dp"
+        android:text="C、这是选项C"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/ac_checkbox_1d"
+        android:paddingStart="10dp"
+        android:text="D、这是选项D"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:text="2、自定义选框效果，请选择?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/ac_checkbox_2a"
+        android:button="@drawable/radiobutton_circle_selector"
+        android:paddingStart="10dp"
+        android:text="A、自定义选项A"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/ac_checkbox_2b"
+        android:button="@drawable/radiobutton_circle_selector"
+        android:paddingStart="10dp"
+        android:text="B、自定义选项B"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/ac_checkbox_2c"
+        android:button="@drawable/radiobutton_circle_selector"
+        android:paddingStart="10dp"
+        android:text="C、自定义选项C"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/ac_checkbox_2d"
+        android:button="@drawable/radiobutton_circle_selector"
+        android:paddingStart="10dp"
+        android:text="D、自定义选项D"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/ac_checkbox_submit"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_bg_test"
+        android:letterSpacing="0.5"
+        android:textAllCaps="false"
+        android:text="提交"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:id="@+id/ac_checkbox_result"
+        android:textSize="18sp"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

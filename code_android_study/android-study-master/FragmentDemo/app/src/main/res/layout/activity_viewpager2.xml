@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f46d43"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Viewpager2属性及使用"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:text="Viewpager2横向滚动"
+        android:textColor="#f46d43"
+        android:textSize="14sp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:visibility="gone"
+        android:id="@+id/ac_viewpager2_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable"
+        app:tabBackground="@color/tab_bg"
+        app:tabGravity="fill"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabUnboundedRipple="false"
+        app:tabMinWidth="5dp"
+        app:tabTextColor="#444444"
+        app:tabSelectedTextColor="#FF2F6E"
+        app:tabIndicatorColor="#FF2000"
+        app:tabIndicatorHeight="24dp"
+        app:tabIndicatorGravity="center"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorAnimationDuration="500"
+        app:tabIndicator="@drawable/indicator_bg"
+        app:tabTextAppearance="@style/TabLayoutTextStyle">
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/ac_viewpager2_h_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:text="Viewpager2纵向滚动"
+        android:textColor="#f46d43"
+        android:textSize="14sp" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/ac_viewpager2_v_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1" />
+</LinearLayout>

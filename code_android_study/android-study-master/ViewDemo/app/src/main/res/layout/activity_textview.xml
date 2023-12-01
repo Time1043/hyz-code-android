@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <TextView
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#ff0000"
+        android:text="TextView基础属性"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_txt"/>
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试textSize"/>
+    <TextView
+        android:textSize="@dimen/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试textSize"/>
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
+        android:id="@+id/ac_textview_basic_txt"
+        android:background="@drawable/text_view_bg"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/red"
+        android:text="测试textColor和background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试textStyle"/>
+
+    <TextView
+        android:letterSpacing="0.2"
+        android:lineSpacingExtra="0dp"
+        android:lineSpacingMultiplier="1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#222222"
+        android:text="测试行间距，测试字间距，行高，啦啦哈哈呵呵呵呵呵呵呵呵呵呵~"/>
+
+
+    <TextView
+        android:ellipsize="end"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxLines="2"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ac_textview_marquee_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+
+        android:text="跑马灯效果跑马灯效果，测试跑马灯效果啦啦哈哈呵呵呵呵呵呵呵呵呵呵~跑马灯效果跑马灯效果，测试跑马灯效果啦啦哈哈呵呵呵呵呵呵呵呵呵呵~"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:autoLink="phone"
+        android:visibility="visible"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="autoLink：18502951252"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#ff0000"
+        android:shadowDx="3.0"
+        android:shadowDy="3.0"
+        android:shadowRadius="1"
+        android:text="带阴影的TextView"
+        android:textColor="#4A4AFF"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:background="#cdcdcd"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+
+            android:id="@+id/ac_textview_drawable_txt"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:drawableTop="@drawable/ic_launcher"
+            android:textSize="14sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="首页"/>
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/ic_launcher"
+            android:textSize="14sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="联系人"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/ic_launcher"
+            android:textSize="14sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="我的"/>
+    </LinearLayout>
+
+    <TextView
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#ff0000"
+        android:text="TextView富文本"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:textSize="18sp"
+        android:id="@+id/ac_textview_html_txt"
+        android:background="#cdcdcd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#ff0000"
+        android:text="TextView自定义字体"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:textSize="20sp"
+        android:text="这是重新设置的一种字体,显示效果，test Typeface"
+        android:id="@+id/ac_textview_typeface_txt"
+        android:background="#cdcdcd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_fragmentbasis_btn"
+                android:text="Fragment基本概念与使用"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_fragmentmanager_btn"
+                android:text="FragmentManager知识与使用"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_fragmentlifecycle_btn"
+                android:text="Fragment的生命周期"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_fragmentdata_btn"
+                android:text="Fragment数据保存与恢复"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_fragmentcommunication_btn"
+                android:text="与Fragment的通信"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_tablayout_btn"
+                android:text="TabLayout属性及使用"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_navigation_btn"
+                android:text="Fragment+TabLayout实现底部导航栏"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_viewpager2_btn"
+                android:text="ViewPager2属性及使用"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_pages_switch_btn"
+                android:text="ViewPager2+Fragment实现多页面滑动"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/ac_main_slide_navigation_btn"
+                android:text="ViewPager2+Fragment+TabLayout实现多页面滑动"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

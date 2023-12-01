@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/color1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Item_red" />
+    <item
+        android:id="@+id/color2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Item_green" />
+    <item
+        android:id="@+id/color3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Item_blue" />
+    <item
+        android:id="@+id/color4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="恢复默认" />
+</menu>

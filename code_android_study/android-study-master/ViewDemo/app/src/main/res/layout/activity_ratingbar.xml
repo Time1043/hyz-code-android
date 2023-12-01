@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <TextView
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textColor="#ff0000"
+        android:text="评级条RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="RatingBar基础属性"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RatingBar
+        android:numStars="5"
+        android:rating="2.5"
+        android:stepSize="0.5"
+        android:isIndicator="true"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <RatingBar
+        style="?android:attr/ratingBarStyleSmall"
+        android:numStars="5"
+        android:rating="2"
+        android:stepSize="0.5"
+        android:progressTint="#ffbb00"
+        android:progressBackgroundTint="#888888"
+        android:isIndicator="false"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <RatingBar
+        style="?android:attr/ratingBarStyleIndicator"
+        android:numStars="5"
+        android:rating="2"
+        android:stepSize="0.5"
+        android:progressTint="#ffbb00"
+        android:progressBackgroundTint="#888888"
+        android:isIndicator="false"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="自定义RatingBar样式"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RatingBar
+        style="@style/customRatingBar"
+        android:numStars="5"
+        android:rating="2"
+        android:stepSize="0.5"
+        android:isIndicator="false"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <RatingBar
+        android:progressDrawable="@drawable/ratingbar_custom2_bg"
+        android:numStars="5"
+        android:rating="2"
+        android:stepSize="0.5"
+        android:isIndicator="false"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"/>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="获取RatingBar的值"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RatingBar
+        android:id="@+id/ratingbar_tating"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:progressTint="#ffbb00"
+        android:progressBackgroundTint="#888888"
+        android:isIndicator="false"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/ratingbar_result"
+        android:layout_marginTop="15dp"
+        android:textColor="#666666"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
