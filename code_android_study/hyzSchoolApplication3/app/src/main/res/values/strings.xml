@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">hyzSchoolApplication3</string>
+    <string name="rlv_bt">线程按钮</string>
+    <string name="toast_download_img_failed">下载图片失败！</string>
+</resources>
