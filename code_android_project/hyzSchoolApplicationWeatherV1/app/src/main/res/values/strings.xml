@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">hyzSchoolApplicationWeatherV1</string>
+    <string name="msg_grt_daily_forecast_failed">获取逐天的天气预报数据失败！</string>
+    <string name="msg_grt_hourly_forecast_failed">获取逐小时的天气预报数据失败！</string>
+    <string name="msg_grt_now_forecast_failed">获取实时的天气预报数据失败！</string>
 </resources>

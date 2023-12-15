@@ -1,4 +1,4 @@
-package com.example.hyzschoolapplication.adapter;
+package com.time1043.hyzschoolapplicationweatherv1.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,9 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.hyzschoolapplication.R;
-import com.example.hyzschoolapplication.model.DailyForecast;
-import com.example.hyzschoolapplication.model.HourlyForecast;
+import com.time1043.hyzschoolapplicationweatherv1.R;
+import com.time1043.hyzschoolapplicationweatherv1.model.HourlyForecast;
 
 import java.util.List;
 
