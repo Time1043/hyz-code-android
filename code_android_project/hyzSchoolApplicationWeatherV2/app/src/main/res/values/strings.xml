@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">简易天气</string>
+    <string name="msg_grt_daily_forecast_failed">获取逐天的天气预报数据失败！</string>
+    <string name="msg_grt_hourly_forecast_failed">获取逐小时的天气预报数据失败！</string>
+    <string name="msg_grt_now_forecast_failed">获取实时的天气预报数据失败！</string>
+
+    <string-array name="cities">
+        <item>北京</item>
+        <item>上海</item>
+        <item>天津</item>
+        <item>重庆</item>
+        <item>广州</item>
+        <item>深圳</item>
+        <item>汕头</item>
+        <item>成都</item>
+        <item>杭州</item>
+        <item>武汉</item>
+        <item>西安</item>
+        <item>苏州</item>
+        <item>南京</item>
+        <item>长沙</item>
+        <item>沈阳</item>
+        <item>青岛</item>
+        <item>郑州</item>
+        <item>大连</item>
+        <item>东莞</item>
+        <item>宁波</item>
+        <item>厦门</item>
+        <item>漳州</item>
+    </string-array>
+
+    <string-array name="cities_id">
+        <item>101010100</item> <!-- 北京 -->
+        <item>101020100</item> <!-- 上海 -->
+        <item>101030100</item> <!-- 天津 -->
+        <item>101040100</item> <!-- 重庆 -->
+        <item>101280101</item> <!-- 广州 -->
+        <item>101280601</item> <!-- 深圳 -->
+        <item>101280501</item> <!-- 汕头 -->
+        <item>101270101</item> <!-- 成都 -->
+        <item>101210101</item> <!-- 杭州 -->
+        <item>101200101</item> <!-- 武汉 -->
+        <item>101110101</item> <!-- 西安 -->
+        <item>101190401</item> <!-- 苏州 -->
+        <item>101190101</item> <!-- 南京 -->
+        <item>101250101</item> <!-- 长沙 -->
+        <item>101070101</item> <!-- 沈阳 -->
+        <item>101120201</item> <!-- 青岛 -->
+        <item>101180101</item> <!-- 郑州 -->
+        <item>101070201</item> <!-- 大连 -->
+        <item>101281601</item> <!-- 东莞 -->
+        <item>101210401</item> <!-- 宁波 -->
+        <item>101230201</item> <!-- 厦门 -->
+        <item>101230601</item> <!-- 漳州 -->
+    </string-array>
+
+</resources>
+
+
